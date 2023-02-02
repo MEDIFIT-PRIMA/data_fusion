@@ -1,0 +1,184 @@
+{
+ 	"modelType": "predictiveModel",
+ 	"generalInformation": {
+ 		"name": "NIR Cheese Adulteration OCC",
+ 		"source": "DD - TOOLS TOOLBOX FOR MATLAB",
+ 		"identifier": "NIR_CHEESE_AD",
+ 		"author": [
+ 			{
+				"tite": "",
+				"familyName": "Morellos",
+				"givenName": "Antonios",
+				"email": "antonios.morellos@gmail.com",
+				"telephone": "+306939773970",
+				"streetAddress": "",
+				"country": "Greece",
+				"zipCode": "",
+				"region": "",
+				"timeZone": "",
+				"gender": "",
+				"note": "",
+				"organization": "Aristotle University of Thessaloniki "
+ 			}
+ 		],
+ 		"creator": [
+ 			{
+				"tite": "",
+				"familyName": "Morellos",
+				"givenName": "Antonios",
+				"email": "antonios.morellos@gmail.com",
+				"telephone": "+306939773970",
+				"streetAddress": "",
+				"country": "Greece",
+				"zipCode": "",
+				"region": "",
+				"timeZone": "",
+				"gender": "",
+				"note": "",
+				"organization": "Aristotle University of Thessaloniki "
+ 			}
+ 		],
+ 		"creationDate": [
+			2022,
+			7,
+			20
+ 		],
+		"modificationDate": [],
+		"rights": "",
+		"availability": "Restricted",
+		"url": "",
+		"format": ".m",
+		"reference": [
+ 			{
+				"isReferenceDescription": false,
+				"date": [],
+				"pmid": "",
+				"doi": "",
+				"authorList": "",
+				"title": "",
+				"journal": "",
+				"volume": "",
+				"issue": "",
+				"status": "",
+				"website": "",
+				"comment": "",
+				"abstract": ""
+ 			}
+ 		],
+		"language": "English",
+		"software": "FSK-Lab",
+		"languageWrittenIn": "Python",
+ 		"modelCategory": {
+			"modelClass": "Classification",
+			"modelSubClass": ["Outlier Detection"],
+			"modelClassComment": "",
+			"basicProcess": []
+ 		},
+ 		"status": "Uncurated", 
+		"objective": "The objective of the model is the identification of authentic goat cheese samples over goat cheese, adulterated with cow milk or palmoil",
+ 		"description": "A Self - Organizing Map algorithm for data description, using a map size of 15 x 15, σ=1 and learning rate of 0.1 as fixed hyperparameters is utilized for the identification of adulteration in goat cheese. The model takes PCA features by the spectral responses of a NIR sensor as inputs. The spectral responses must be subjected to the following preprocessing and transformations: A) Savitzky Golay filter (using 1st derivative, a 2nd order polynomial and a window size of 15), B) Mean Centering, C) Dimesnionality Reduction using a PCA model that takes the first 3 components as features. The components used are the ones that showed the minimum RMSE in the Cross Validation process. The model is trained on a dataset of 24 authentic goat cheese samples and 6 adulterated samples (different levels of cow adulteration). The model's output is a boolean (authentic or adulterated)."
+ 	},
+ 	"scope": {
+ 		"product": [
+ 			{
+				"name": "goat cheese",
+				"description": "NIR spectra",
+				"unit": "[]",
+				"method": [],
+				"packaging": [],
+				"treatment": [],
+				"originCountry": "Greece",
+				"originArea": "",
+				"fisheriesArea": ""
+ 			}
+ 		],
+ 		"hazard": [
+ 			{
+				"type": "Adulteration",
+				"name": "Palmoil and Cow",
+				"description": "Different levels of concentration for Palmoil adulteration and Cow milk adulteration.",
+				"unit": "",
+				"adverseEffect": "",
+				"sourceOfContamination": "",
+				"benchmarkDose": "",
+				"maximumResidueLimit": "",
+				"noObservedAdverseAffectLevel": "",
+				"lowestObservedAdverseAffectLevel": "",
+				"acceptableOperatorsExposureLevel": "",
+				"acuteReferenceDose": "",
+				"acceptableDailyIntake": "",
+				"indSum": ""
+ 			}
+ 		],
+		"populationGroup": [],
+		"generalComment": "",
+		"temporalInformation": "",
+		"spatialInformation": []
+ 	},
+ 	"dataBackground": {
+ 		"study": {
+			"identifier": "",
+			"title": "",
+			"description": "",
+			"designType": "",
+			"assayMeasurementType": "",
+			"assayTechnologyType": "",
+			"assayTechnologyPlatform": "",
+			"accreditationProcedureForTheAssayTechnology": "",
+			"protocolName": "",
+			"protocolDescription": "",
+			"protocolURI": "",
+			"protocolVersion": "",
+			"protocolParametersName": "",
+			"protocolComponentsName": "",
+			"protocolComponentsType": ""
+		},
+		"studySample": [],
+		"dietaryAssessmentMethod": [],
+		"laboratory": [],
+		"assay": []
+ 	},
+ 	"modelMath": {
+ 		"parameter": [
+ 			{
+				"id": "Xtest",
+				"classification": "INPUT",
+				"name": "NIR spectra for testing",
+				"description": "a numpy object array of size [n x 331], where n is the number of testing samples and 331 is the total number of spectral bands given by the NIR sensor.",
+				"unit": "[]",
+				"unitCategory": "",
+				"dataType": "float32",
+				"source": "",
+				"subject": "",
+				"distribution": "",
+				"value": "",
+				"variabilitySubject": "",
+				"minValue": "",
+				"maxValue": "",
+				"error": ""
+ 			},
+ 			{
+				"id": "det_mtx",
+				"classification": "OUTPUT",
+				"name": "Confusion Matrix",
+				"description": "A numpy of booleans that shows the class that the samples belong to (authentic or adulterated).",
+				"unit": "[]",
+				"unitCategory": "",
+				"dataType": "float32",
+				"source": "",
+				"subject": "",
+				"distribution": "",
+				"value": "",
+				"variabilitySubject": "",
+				"minValue": "",
+				"maxValue": "",
+				"error": ""
+ 			}
+ 		],
+		"qualityMeasures": [],
+		"modelEquation": [],
+		"fittingProcedure": "",
+		"exposure": [],
+		"event": []
+	}
+} 
