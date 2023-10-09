@@ -2,6 +2,6 @@ h: honey
 c: cheese
 f1: Fusion 1 between FTNIR and FTMIR sensors
 f2: Fusion 2 between FTNIR, FTMIR and CRM sensors
-model_ad: authentication model
-model_geo: geographical origin model
-model_bit: botanical origin model
+ad: authentication model
+geo: geographical origin model
+bot: botanical origin model
