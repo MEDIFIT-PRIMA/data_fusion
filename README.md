@@ -1,16 +1,16 @@
 # Data Fusion Models
 
-## Available Models Description
-- c_f1_ad.fskx: A sensor fusion model for the detection of adulteration in cheese samples (FT-NIR x FT-MIR sensor fusion).
-- c_f1_geo.fskx: A sensor fusion model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR sensor fusion).
-- c_f2_ad.fskx: A sensor fusion model for the detection of adulteration in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
-- c_f2_geo.fskx: A sensor fusion model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
-- h_f1_ad.fskx: A sensor fusion model for the detection of adulteration in honey samples (FT-NIR x FT-MIR sensor fusion).
-- h_f1_bot.fskx:A sensor fusion model for the botanical origin detection in cheese samples (FT-NIR x FT-MIR sensor fusion).
-- h_f1_geo.fskx: A sensor fusion model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR sensor fusion).
-- h_f2_ad.fskx: A sensor fusion model for the detection of adulteration in honey samples (FT-NIR x FT-MIR x CRM sensor fusion).
-- h_f2_bot.fskx:A sensor fusion model for the botanical origin detection in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
-- h_f2_geo.fskx: A sensor fusion model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
+## Available Fusion Models Description
+- c_f1_ad.fskx: Model for the detection of adulteration in cheese samples (FT-NIR x FT-MIR sensor fusion).
+- c_f1_geo.fskx: Nodel for the geographical origin detection in cheese samples (FT-NIR x FT-MIR sensor fusion).
+- c_f2_ad.fskx: Model for the detection of adulteration in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
+- c_f2_geo.fskx: Model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
+- h_f1_ad.fskx: Model for the detection of adulteration in honey samples (FT-NIR x FT-MIR sensor fusion).
+- h_f1_bot.fskx: Model for the botanical origin detection in cheese samples (FT-NIR x FT-MIR sensor fusion).
+- h_f1_geo.fskx: Model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR sensor fusion).
+- h_f2_ad.fskx: Model for the detection of adulteration in honey samples (FT-NIR x FT-MIR x CRM sensor fusion).
+- h_f2_bot.fskx: Model for the botanical origin detection in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
+- h_f2_geo.fskx: Model for the geographical origin detection in cheese samples (FT-NIR x FT-MIR x CRM sensor fusion).
 
 ## Notation for the Fusion Models' names
 - h: honey 
