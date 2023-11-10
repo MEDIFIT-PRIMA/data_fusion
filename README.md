@@ -24,6 +24,7 @@
 ## Required Input Parameters:
 - f1 models: For models that belong to F1 fusion scenario (FT-NIR x FT-MIR sensor fusion) two discrete excel files with the spectral responses of the two sensors (one sample per row) are required. The excel file names must contain the sensor's name ("ftnir" or "ftmir", for FT-NIR and FT-MIR respectively).
 - f2 models: For models that belong to F2 fusion scenario (FT-NIR x FT-MIR x CRM sensor fusion) the required inputs include the same as in f1 models with the addition of an extra excel file for the CRM data. The excel file name for the CRM data must contain the sensor's name ("raman").
+- Example data for every fusion scenario are included in the ExampleData file
 
 ## Expected Output Description:
 - 'ad': Adulterated Sample
